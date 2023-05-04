@@ -1,0 +1,37 @@
+.navbar{
+  backdrop-filter: blur(20px) !important;
+}
+
+.offcanvas-body{
+  justify-content: flex-end !important;
+}
+.nav-link{
+  color: white !important;
+}
+
+.nav-link:focus, .nav-link:hover{
+  color: white;
+  opacity: 0.8;
+}
+.navbar-toggler{
+  transition: none !important;
+  border: none;
+}
+.navbar-toggler:hover{
+  opacity: 0.8 !important;
+}
+
+.navbar-toggler:focus{
+  box-shadow: none !important;
+}
+
+#offcanvasNavbar{
+  background-color: rgb(39, 39, 39);
+}
+.btn-close:focus{
+    box-shadow: none !important;
+}
+
+.show{
+  color: white !important;
+}
