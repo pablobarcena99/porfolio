@@ -1,4 +1,8 @@
 main {
   font-family: var(--font-kronaone);
+  /* background-color: #131313; */
+  
+}
+html{
   background-color: #131313;
 }

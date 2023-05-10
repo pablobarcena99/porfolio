@@ -28,11 +28,11 @@ function App() {
               <Nav className='justify-content-endflex-grow-1pe-3'>
                 <Nav.Link href='#action1'>SidearItem1</Nav.Link>
                 <Nav.Link href='#action2'>SidebarItem2</Nav.Link>
-                <NavDropdown title='Dropdown' id='offcanvasNavbarDropdown'>
-                  <NavDropdown.Item href='#action3'>DropdownItem1</NavDropdown.Item>
-                  <NavDropdown.Item href='#action4'>DropdownItem2</NavDropdown.Item>
+                <NavDropdown title='Projects' id='offcanvasNavbarDropdown'>
+                  <NavDropdown.Item href='#action3'>eCommerce</NavDropdown.Item>
+                  <NavDropdown.Item href='#action4'>Menda Lerenda</NavDropdown.Item>
                   <NavDropdown.Divider />
-                  <NavDropdown.Item href='#action5'>DividedItem</NavDropdown.Item>
+                  <NavDropdown.Item href='#action5'>Github</NavDropdown.Item>
                 </NavDropdown>
               </Nav>
             </Offcanvas.Body>
