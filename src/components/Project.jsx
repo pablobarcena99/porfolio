@@ -84,7 +84,7 @@ const Project = (props) => {
           <Section>
             <Content>
               <Row>
-                <Col xs={12} md={6} lg={6} xl={6}>
+                <Col xs={12} md={6} lg={6} xl={6} className="mt-3">
                   <Title>{props.title}</Title>
                   <ProjectDesc>
                     <p>{props.desc}</p>
@@ -100,7 +100,7 @@ const Project = (props) => {
                     </Links>
                   </ProjectDesc>
                 </Col>
-                <Col xs={12} md={6} lg={6} xl={6}>
+                <Col xs={12} md={6} lg={6} xl={6} className="mt-3">
                   <a href={props.link} target='_blank'>
                     <img src={props.img} alt='preview' />
                   </a>

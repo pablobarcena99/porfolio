@@ -60,6 +60,8 @@ const ContactSection = () => {
                   <a href='https://linkedin.com/'>
                     <FaEnvelope />{" "}
                   </a>
+
+
                 </IconSection>
                 <TextSection>
                   <p>Pablo Bárcena Carrión</p>

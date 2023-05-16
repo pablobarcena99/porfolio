@@ -1,13 +1,12 @@
-import Head from 'next/head'
-import Image from 'next/image'
-import styles from '@/styles/Home.module.css'
-import Navbar from '../components/Navbar.jsx'
-import Hero from '@/components/Hero.jsx'
-import Project from '@/components/Project.jsx'
-import SectionTitle from '@/components/SectionTitle.jsx'
-import { Main } from 'next/document.js'
-import ContactSection from '@/components/ContactSection.jsx'
-
+import Head from "next/head";
+import Image from "next/image";
+import styles from "@/styles/Home.module.css";
+import Navbar from "../components/Navbar.jsx";
+import Hero from "@/components/Hero.jsx";
+import Project from "@/components/Project.jsx";
+import SectionTitle from "@/components/SectionTitle.jsx";
+import { Main } from "next/document.js";
+import ContactSection from "@/components/ContactSection.jsx";
 
 export default function Home() {
   return (
@@ -18,7 +17,7 @@ export default function Home() {
       <Project
         title='eCommerce'
         desc={[
-          "This is an eCommerce project based on Next.js and Sanity.io as the content manager.",
+          "This is an exciting eCommerce project that I had the opportunity to work on, based on Next.js and powered by Sanity.io as the content management system.",
           // <br />,
           // <br />
         ]}
@@ -29,7 +28,11 @@ export default function Home() {
       />
       <Project
         title='menda lerenda'
-        desc={["This is a press kit webpage of rock music band based on Next.js."]}
+        desc={[
+          "In this project, the music group Menda Lerenda asked me to create their website as a digital press kit to showcase their work.",
+          <br />,
+          " With their input, I designed and developed a website that captures their style. The design is responsive, allowing for optimal viewing on any device.",
+        ]}
         tecnologies={["Next.js", "Styled Components", "Bootstrap"]}
         img='https://res.cloudinary.com/dygvieuns/image/upload/v1683731845/screely-1683731822926_svzunb.png'
         link='https://mendalerendaoficial.com'
