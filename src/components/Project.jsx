@@ -6,6 +6,7 @@ import { FaGithubSquare } from "react-icons/fa";
 import { FaGlobe } from "react-icons/fa";
 import { FaGithub } from "react-icons/fa";
 
+//Styled Components
 const SectionBackground = styled.div`
   /* background-color: #141414; */
   /* background-color: #131313; */
@@ -49,68 +50,60 @@ const Content = styled.div`
     }
   }
 `;
-
 const Links = styled.div`
   display: flex;
   flex-direction: row;
   gap: 10px;
   font-size: 25px;
   color: #a390ff !important;
-  a{
+  a {
     text-decoration: none;
     color: inherit;
   }
 `;
-
 const ProjectDesc = styled.div`
   /* background-color: #ed4d6e; */
   /* background-image: linear-gradient(90deg, #ed4d6e 0%, #ff6a88 55%, #ff99ac 100%); */
   height: 100%;
   border-radius: 4px;
 `;
-function TecnologiesList(props) {
-  const tecnologies = props.tecnologies;
-  const listItems = tecnologies.map((element) => <li key={element.id}>{element}</li>);
-  console.log(listItems);
-  return <ul>{listItems}</ul>;
-}
 
-const Project = (props) => {
+export default function Project(props) {
   return (
-    <>
-      <SectionBackground>
-        <Container>
-          <Section>
-            <Content>
-              <Row>
-                <Col xs={12} md={6} lg={6} xl={6} className="mt-3">
-                  <Title>{props.title}</Title>
-                  <ProjectDesc>
-                    <p>{props.desc}</p>
-                    <TecnologiesList tecnologies={props.tecnologies} />
-                    <br />
-                    <Links>
-                      <a href={props.repo} target='_blank'>
-                        <FaGithub />
-                      </a>
-                      <a href={props.link} target='_blank'>
-                        <FaGlobe />
-                      </a>
-                    </Links>
-                  </ProjectDesc>
-                </Col>
-                <Col xs={12} md={6} lg={6} xl={6} className="mt-3">
-                  <a href={props.link} target='_blank'>
-                    <img src={props.img} alt='preview' />
-                  </a>
-                </Col>
-              </Row>
-            </Content>
-          </Section>
-        </Container>
-      </SectionBackground>
-    </>
+    <SectionBackground>
+      <Container>
+        <Section>
+          <Content>
+            <Row>
+              <Col xs={12} md={6} lg={6} xl={6} className='mt-3'>
+                <Title>{props.title}</Title>
+                <ProjectDesc>
+                  <p>{props.desc}</p>
+                  <ul>
+                    {props.tecnologies.map((element) => (
+                      <li key={element.id}>{element}</li>
+                    ))}
+                  </ul>
+                  <br />
+                  <Links>
+                    <a href={props.repo} target='_blank'>
+                      <FaGithub />
+                    </a>
+                    <a href={props.link} target='_blank'>
+                      <FaGlobe />
+                    </a>
+                  </Links>
+                </ProjectDesc>
+              </Col>
+              <Col xs={12} md={6} lg={6} xl={6} className='mt-3'>
+                <a href={props.link} target='_blank'>
+                  <img src={props.img} alt='preview' />
+                </a>
+              </Col>
+            </Row>
+          </Content>
+        </Section>
+      </Container>
+    </SectionBackground>
   );
-};
-
-export default Project;
+}

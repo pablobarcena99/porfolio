@@ -34,7 +34,7 @@ export default function Home() {
           title='menda lerenda'
           desc={[
             "In this project, the music group Menda Lerenda asked me to create their website as a digital press kit to showcase their work.",
-            <br />,
+            <br key="line"/>,
             " With their input, I designed and developed a website that captures their style. The design is responsive, allowing for optimal viewing on any device.",
           ]}
           tecnologies={["Next.js", "Styled Components", "Bootstrap"]}
