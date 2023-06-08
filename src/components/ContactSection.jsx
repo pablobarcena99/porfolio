@@ -51,17 +51,15 @@ const ContactSection = () => {
             <Col xs={12} md={6} lg={6} xl={6}>
               <Info>
                 <IconSection>
-                  <a href='https://github.com/'>
+                  <a href='https://github.com/pablobarcena99' target='_blank'>
                     <FaGithub />{" "}
                   </a>
-                  <a href='https://linkedin.com/'>
+                  <a href='https://www.linkedin.com/in/pablobarcena99/' target='_blank'>
                     <FaLinkedin />{" "}
                   </a>
-                  <a href='https://linkedin.com/'>
+                  <a href='mailto: pablobarcena99@gmail.com' target='_blank'>
                     <FaEnvelope />{" "}
                   </a>
-
-
                 </IconSection>
                 <TextSection>
                   <p>Pablo Bárcena Carrión</p>

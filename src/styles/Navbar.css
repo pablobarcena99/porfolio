@@ -1,37 +1,49 @@
-.navbar{
+.navbar {
   backdrop-filter: blur(20px) !important;
 }
 
-.offcanvas-body{
+.dropdown-item:active {
+  color: black !important;
+  background-color: white !important;
+}
+
+.offcanvas-body {
   justify-content: flex-end !important;
 }
-.nav-link{
+
+.nav-link {
   color: white !important;
 }
 
-.nav-link:focus, .nav-link:hover{
+.nav-link:focus,
+.nav-link:hover {
   color: white;
   opacity: 0.8;
 }
-.navbar-toggler{
+.navbar-toggler {
   transition: none !important;
-  border: none;
+  border: none !important;
 }
-.navbar-toggler:hover{
+.navbar-toggler:hover {
   opacity: 0.8 !important;
+  box-shadow: none !important;
+  border: none !important;
 }
 
-.navbar-toggler:focus{
+.navbar-toggler:focus {
+  box-shadow: none !important;
+  border: none !important;
+}
+
+#offcanvasNavbar {
+  background-color: rgb(39, 39, 39);
+  font-family: var(--font-kronaone);
+}
+
+.btn-close:focus {
   box-shadow: none !important;
 }
 
-#offcanvasNavbar{
-  background-color: rgb(39, 39, 39);
-}
-.btn-close:focus{
-    box-shadow: none !important;
-}
-
-.show{
+.show {
   color: white !important;
 }

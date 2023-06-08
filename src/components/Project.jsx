@@ -32,7 +32,6 @@ const Content = styled.div`
   width: 100%;
 
   p {
-
     color: white;
     font-family: var(--font-poppins);
   }
