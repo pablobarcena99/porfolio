@@ -56,7 +56,7 @@ export class Hero extends Component {
                 <h1>Pablo Bárcena.</h1>
               </motion.div>
               <h2>
-                I&#39;m a creative <span>fullstack</span> developer
+                I&apos;m a creative <span>fullstack</span> developer
               </h2>
 
               <Icons>
