@@ -1,42 +1,50 @@
-import "bootstrap/dist/css/bootstrap.min.css";
+import { useState } from "react";
 import {
   Navbar,
   Container,
   Nav,
   NavDropdown,
   Offcanvas,
-  Form,
-  FormControl,
-  Button,
 } from "react-bootstrap";
 import { Link } from "react-scroll";
 
-function App() {
+function NavBar() {
+  const [expanded, setExpanded] = useState(false);
+
   return (
     <>
       <Navbar bg='transparent' expand='lg' fixed='top' variant='dark'>
         <Container>
           <Navbar.Brand href='#'>pablo.</Navbar.Brand>
-          <Navbar.Toggle aria-controls='offcanvasNavbar' />
+          <Navbar.Toggle
+            aria-controls='offcanvasNavbar'
+            onClick={() => setExpanded(true)}
+            className='btn border-0'
+          />
           <Navbar.Offcanvas
+            show={expanded}
+            onHide={setExpanded}
             id='offcanvasNavbar'
             aria-labelledby='offcanvasNavbarLabel'
-            placement='end'>
+            placement='end'
+            className='bg-dark'>
             <Offcanvas.Header closeButton className='btn-close-white'>
-              <Offcanvas.Title id='offcanvasNavbarLabel'></Offcanvas.Title>
+              <Offcanvas.Title id='offcanvasNavbarLabel'>pablo.</Offcanvas.Title>
             </Offcanvas.Header>
             <Offcanvas.Body>
-              <Nav className='justify-content-end flex-grow-1 pe-3'>
-                {/* <Nav.Link href='#action1'>SidearItem1</Nav.Link>
-                <Nav.Link href='#action2'>SidebarItem2</Nav.Link> */}
+              <Nav className='justify-content-end flex-grow-1 pe-3 text-white'>
                 <NavDropdown title='Links' id='offcanvasNavbarDropdown'>
                   <NavDropdown.Item
                     href='https://www.linkedin.com/in/pablobarcena99/'
-                    target='_blank'>
+                    target='_blank'
+                    onClick={() => setExpanded(false)}>
                     Linkedin
                   </NavDropdown.Item>
                   <NavDropdown.Divider />
-                  <NavDropdown.Item href='https://github.com/pablobarcena99' target='_blank'>
+                  <NavDropdown.Item
+                    href='https://github.com/pablobarcena99'
+                    target='_blank'
+                    onClick={() => setExpanded(false)}>
                     Github
                   </NavDropdown.Item>
                 </NavDropdown>
@@ -48,7 +56,8 @@ function App() {
                     smooth={false}
                     duration={0}
                     offset={-48}
-                    href=''>
+                    href=''
+                    onClick={() => setExpanded(false)}>
                     eCommerce
                   </NavDropdown.Item>
                   <NavDropdown.Item
@@ -58,7 +67,8 @@ function App() {
                     smooth={false}
                     duration={0}
                     offset={-48}
-                    href=''>
+                    href=''
+                    onClick={() => setExpanded(false)}>
                     Menda Lerenda
                   </NavDropdown.Item>
                   <NavDropdown.Divider />
@@ -72,4 +82,4 @@ function App() {
     </>
   );
 }
-export default App;
+export default NavBar;

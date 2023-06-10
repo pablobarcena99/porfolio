@@ -2,17 +2,14 @@
   backdrop-filter: blur(20px) !important;
 }
 
-.dropdown-item:active {
-  color: black !important;
-  background-color: white !important;
-}
-
 .offcanvas-body {
   justify-content: flex-end !important;
 }
 
 .nav-link {
+  font-family: var(--font-kronaone) !important;
   color: white !important;
+
 }
 
 .nav-link:focus,
@@ -20,6 +17,8 @@
   color: white;
   opacity: 0.8;
 }
+
+/* TOGGLERS SHADOW AND BORDER OVERRIDE */
 .navbar-toggler {
   transition: none !important;
   border: none !important;
@@ -35,15 +34,6 @@
   border: none !important;
 }
 
-#offcanvasNavbar {
-  background-color: rgb(39, 39, 39);
-  font-family: var(--font-kronaone);
-}
-
 .btn-close:focus {
   box-shadow: none !important;
-}
-
-.show {
-  color: white !important;
 }

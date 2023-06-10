@@ -1,5 +1,7 @@
+import "bootstrap/dist/css/bootstrap.min.css";
 import "@/styles/globals.css";
 import "../styles/Navbar.css";
+
 import { Foldit, Krona_One, Poppins ,Bebas_Neue} from "next/font/google";
 import { SSRProvider } from "react-bootstrap";
 
