@@ -16,18 +16,14 @@ export default function Home() {
       <AppBar />
       <Hero />
       <SectionTitle title='Projects' />
-      <Element id='polaroid'>
+      <Element id='dear'>
         <Project
-          title='Polaroid Shop'
-          desc={[
-            "This is an exciting eCommerce project that I had the opportunity to work on, based on Next.js and powered by Sanity.io as the content management system.",
-            // <br />,
-            // <br />
-          ]}
-          tecnologies={["Next.js", "Sanity.io", "Styled Components", "Bootstrap"]}
-          img='https://res.cloudinary.com/dygvieuns/image/upload/v1683731852/screely-1683731801128_ip6iio.png'
-          link='https://ecommerce-sanity-pablobarcena99.vercel.app/'
-          repo='https://github.com/pablobarcena99/ecommerce_sanity'
+          title='dear:'
+          desc='This is a project that I did for a client who wanted to create an online store for his clothing brand. I used Shopify as the CMS and Next.js as the frontend framework.'
+          tecnologies={["NextJs", "Shopify", "Styled Components", "Bootstrap"]}
+          img='https://res.cloudinary.com/dygvieuns/image/upload/v1688543793/screely-1688543749903_zmgo5w.png'
+          link='https://shopify-dear.vercel.app'
+          repo='https://github.com/pablobarcena99/shopify-dear'
         />
       </Element>
       <Element id='menda_lerenda'>
@@ -44,17 +40,21 @@ export default function Home() {
           repo='https://github.com/pablobarcena99/mendalerenda'
         />
       </Element>
-
-      <Element id='dear'>
+      <Element id='polaroid'>
         <Project
-          title='dear:'
-          desc='This is a project that I did for a client who wanted to create an online store for his clothing brand. I used Shopify as the CMS and Next.js as the frontend framework.'
-          tecnologies={["NextJs", "Shopify", "Styled Components", "Bootstrap"]}
-          img='https://res.cloudinary.com/dygvieuns/image/upload/v1688543793/screely-1688543749903_zmgo5w.png'
-          link='https://shopify-dear.vercel.app'
-          repo='https://github.com/pablobarcena99/shopify-dear'
+          title='Polaroid Shop'
+          desc={[
+            "This is an exciting eCommerce project that I had the opportunity to work on, based on Next.js and powered by Sanity.io as the content management system.",
+            // <br />,
+            // <br />
+          ]}
+          tecnologies={["Next.js", "Sanity.io", "Styled Components", "Bootstrap"]}
+          img='https://res.cloudinary.com/dygvieuns/image/upload/v1683731852/screely-1683731801128_ip6iio.png'
+          link='https://ecommerce-sanity-pablobarcena99.vercel.app/'
+          repo='https://github.com/pablobarcena99/ecommerce_sanity'
         />
       </Element>
+
       <Element id='contact'>
         <ContactSection />
       </Element>
