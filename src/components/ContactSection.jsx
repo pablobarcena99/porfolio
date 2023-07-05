@@ -6,7 +6,7 @@ import styled from "styled-components";
 const Background = styled.div`
   background-color: #7ae7c7;
   background-image: linear-gradient(19deg, #7ae7c7 0%, #a390ff 100%);
-  min-height: 300px;
+  min-height: 500px;
   display: flex;
   align-items: center;
 `;

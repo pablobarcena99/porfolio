@@ -1,11 +1,5 @@
 import { useState } from "react";
-import {
-  Navbar,
-  Container,
-  Nav,
-  NavDropdown,
-  Offcanvas,
-} from "react-bootstrap";
+import { Navbar, Container, Nav, NavDropdown, Offcanvas } from "react-bootstrap";
 import { Link } from "react-scroll";
 
 function NavBar() {
@@ -70,6 +64,17 @@ function NavBar() {
                     href=''
                     onClick={() => setExpanded(false)}>
                     Menda Lerenda
+                  </NavDropdown.Item>
+                  <NavDropdown.Item
+                    as={Link}
+                    to='dear'
+                    spy={true}
+                    smooth={false}
+                    duration={0}
+                    offset={-48}
+                    href=''
+                    onClick={() => setExpanded(false)}>
+                    dear
                   </NavDropdown.Item>
                   <NavDropdown.Divider />
                   <NavDropdown.Item href='#action5'>Github</NavDropdown.Item>

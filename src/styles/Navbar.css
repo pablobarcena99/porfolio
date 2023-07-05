@@ -6,11 +6,7 @@
   justify-content: flex-end !important;
 }
 
-.nav-link {
-  font-family: var(--font-kronaone) !important;
-  color: white !important;
 
-}
 
 .nav-link:focus,
 .nav-link:hover {
@@ -37,3 +33,16 @@
 .btn-close:focus {
   box-shadow: none !important;
 }
+
+
+.nav-link {
+  color: white !important;
+  font-family: var(--font-kronaone) !important;
+}
+
+
+.dropdown-item.active{
+  background-color: white !important;
+  color: black !important;
+}
+
